@@ -1,0 +1,65 @@
+html,body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.page_404 {
+    padding: 40px 0;
+    background: #fff;
+    font-family: 'Arvo', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.page_404 img{
+    width: 100%;
+}
+
+.text-center {
+    margin-bottom: 30px;
+}
+.four_zero_four_bg {
+    background-image: url(XOXO.gif);
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.four_zero_four_bg h1 {
+    font-size: 80px;
+}
+.four_zero_four_bg h3 {
+    font-size: 80px;
+}
+.link_404 {
+    color: #fff !important;
+    padding: 21px 45px;
+    background: #39ac31;
+    margin: 20px 0;
+    display: inline-block;
+}
+.contant_box_404 {
+    margin-top: -50px;
+    text-align: center;
+}
+
+.h2 {
+    font-size: 80px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+p {
+    font-size: 22px;
+    letter-spacing: 0.03em;
+    padding: 20px;
+    width: 493px;
+    transform: translateX(44%);
+}
+
+a {
+    border-radius: 12px;
+    text-decoration: none;
+}

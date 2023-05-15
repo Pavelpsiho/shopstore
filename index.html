@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название страницы</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <button class="menu-btn" type="button">
+                    <span class="btn-line"></span>
+                    <span class="btn-line"></span>
+                    <span class="btn-line"></span>
+                    <span class="btn-line"></span>
+                </button>
+                <ul class="menu">
+                    <li class="menu_items_li"><a class="menu_items" href="#woman">Каталог</a></li>
+                    <li class="menu_items_li"><a class="menu_items" href="#footer">Контакты</a></li>
+                    <li class="menu_items_li phone"><a class="menu_items phone" href="tel:+79993218732">+79993218732</a></li>
+                    <li class="top_menu-item hidden"><a href="#woman">Женщинам</a></li>
+                    <li class="top_menu-item hidden"><a href="#man">Мужчинам</a></li>
+                    <li class="top_menu-item hidden"><a href="#child">Детские товары</a></li>
+                    <li class="top_menu-item hidden"><a href="#heals">Красота и здоровье</a></li>
+                    <li class="top_menu-item hidden"><a href="#sale">Акции</a></li>
+                </ul>
+                <a class="logo" href="#"><img src="./assets/img/logo1_ff.png" width="120" height="60" alt="logo"></a>
+                <button class="light" onclick="toggleTheme()">Темa</button>
+                <a class="basket" href="#"><img src="./assets/img/basket.svg" alt="">
+                <!-- <span>1</span> -->
+                </a>
+            </nav>
+            <ul class="top_menu">
+                    <li class="top_menu-item"><a href="#woman">Женщинам</a></li>
+                    <li class="top_menu-item"><a href="#man">Мужчинам</a></li>
+                    <li class="top_menu-item"><a href="#child">Детские товары</a></li>
+                    <li class="top_menu-item"><a href="#heals">Красота и здоровье</a></li>
+                    <li class="top_menu-item"><a href="#sale">Акции</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <section class="top">
+            <div class="container">
+                <h1 class="title">
+                    Обувь найдется для каждого
+                </h1>
+                <button class="top__link" href="#sale">Выбрать</button>
+            </div>  
+        </section>
+        <section class="accessories" id="woman">
+            <div class="container">
+                <h2 class="accessories__title section-title">Женская обувь</h2>
+                <div class="accessories__items">
+                    <div class="accessories__item product-card-item product-card" data-date-added="2021-02-14T12:03:00Z">
+                    <img class="accessories__item-img product-image img" src="assets/card-img/acc1.jpeg" alt="Product 1">
+                    <h3 class="accessories__item-title">Эспадрильи женские</h3>
+                    <p class="accessories__item-text date-added" id="date-added"></p>
+                    <span class="accessories__item-price">1199 ₽</span>
+                    <button class="accessories__item-btn buy-btn" data-name="Эспадрильи женские" data-price="1199">Купить</button>
+                </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-05-10T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc2.jpeg" alt="Product 2">
+                        <h3 class="accessories__item-title">Кроссовки Женские</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">2199 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Кроссовки Женские" data-price="2199">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-10-09T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc3.jpeg" alt="Product 3">
+                        <h3 class="accessories__item-title">Кеды Женские</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">1799 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Кеды Женские" data-price="1799">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2021-08-09T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc4.jpeg" alt="Product 4">
+                        <h3 class="accessories__item-title">Эспадрильи женские</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">2299 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Эспадрильи женские" data-price="2299">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-02-16T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc5.jpeg" alt="Product 5">
+                        <h3 class="accessories__item-title">Полуботинки Женские</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">2699 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Полуботинки Женские" data-price="2699">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-08-18T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc6.jpeg" alt="Product 6">
+                        <h3 class="accessories__item-title">Сандалии Женские</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">2199 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Сандалии Женские" data-price="2199">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2023-04-22T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc7.jpeg" alt="Product 7">
+                        <h3 class="accessories__item-title">Резиновая обувь женская</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">999 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Резиновая обувь женская" data-price="999">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-05-19T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc8.jpeg" alt="Product 8">
+                        <h3 class="accessories__item-title">Эспадрильи женские</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">1199 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Эспадрильи женские" data-price="1199">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-04-27T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc9.jpeg" alt="Product 9">
+                        <h3 class="accessories__item-title">Резиновая обувь женская</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">1199 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Резиновая обувь женская" data-price="1199">Купить</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <br>
+        <section class="accessories" id="man">
+            <div class="container">
+                <h2 class="accessories__title section-title">Мужская обувь</h2>
+                <div class="accessories__items">
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-01-05T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc12.jpeg" alt="Product 10">
+                        <h3 class="accessories__item-title">Кроссовки Мужские</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">1999 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Кроссовки Мужские" data-price="1999">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2021-09-23T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc13.jpeg" alt="Product 11">
+                        <h3 class="accessories__item-title">Полуботинки Мужские</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">2199 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Полуботинки Мужские" data-price="2199">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-01-25T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc14.jpeg" alt="Product 12">
+                        <h3 class="accessories__item-title">Полуботинки Мужские</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">2299 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Полуботинки Мужские" data-price="2299">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-03-15T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc15.jpeg" alt="Product 13">
+                        <h3 class="accessories__item-title">Кеды Муржские</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">1499 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Кеды Муржские" data-price="1499">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2021-12-20T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc16.jpeg" alt="Product 27">
+                        <h3 class="accessories__item-title">Мокасины Муржские</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">2999 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Мокасины Муржские" data-price="2999">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2021-05-13T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc17.jpeg" alt="Product 28">
+                        <h3 class="accessories__item-title">Туфли Классические Муржские</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">2199 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Туфли Классические Муржские" data-price="2199">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-12-07T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc18.jpeg" alt="Product 29">
+                        <h3 class="accessories__item-title">Сандалии Муржские</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">3999 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Сандалии Муржские" data-price="3999">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-12-16T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc19.jpeg" alt="Product 30">
+                        <h3 class="accessories__item-title">Полуботинки Мужские</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">3499 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Полуботинки Мужские" data-price="3499">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2023-03-02T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc20.jpeg" alt="Product 31">
+                        <h3 class="accessories__item-title">Шлепанцы Муржские</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">799 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Эспадрильи женские" data-price="799">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2021-09-17T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc21.jpeg" alt="Product 32">
+                        <h3 class="accessories__item-title">Полуботинки Муржские</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">2299 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Полуботинки Муржские" data-price="2299">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-02-22T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc22.jpeg" alt="Product 33">
+                        <h3 class="accessories__item-title">Сандалии Муржские</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">1799 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Сандалии Муржские" data-price="1799">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2021-06-29T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc23.jpeg" alt="Product 34">
+                        <h3 class="accessories__item-title">Полуботинки Муржские</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">2999 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Полуботинки Муржские" data-price="2999">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <section class="accessories" id="child">
+            <div class="container">
+                <h2 class="accessories__title section-title">Детская обувь</h2>
+                <div class="accessories__items">
+                    <div class="accessories__item product-card-item product-card" data-date-added="2021-04-01T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc25.jpeg" alt="Product 14">
+                        <h3 class="accessories__item-title">Сандалии для Девочек</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">1799 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Сандалии для Девочек" data-price="1799">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2023-02-13T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc26.jpeg" alt="Product 15">
+                        <h3 class="accessories__item-title">Сандалии для Девочек</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">1999 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Сандалии для Девочек" data-price="1999">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-06-24T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc27.jpeg" alt="Product 16">
+                        <h3 class="accessories__item-title">Туфли для Девочек</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">1799 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Туфли для Девочек" data-price="1799">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-06-12T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc28.jpeg" alt="Product 17">
+                        <h3 class="accessories__item-title">Слипоны для Девочек</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">1299 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Слипоны для Девочек" data-price="1299">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2021-05-20T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc29.jpeg" alt="Product 35">
+                        <h3 class="accessories__item-title">Шлепанцы для Девочек</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">699 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Шлепанцы для Девочек" data-price="699">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2023-02-05T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc30.jpeg" alt="Product 36">
+                        <h3 class="accessories__item-title">Кроссовки для Девочек</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">2199 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Кроссовки для Девочек" data-price="2199">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2021-04-02T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc31.jpeg" alt="Product 37">
+                        <h3 class="accessories__item-title">Кроссовки для Мальчиков</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">1499 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Кроссовки для Мальчиков" data-price="1499">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-12-22T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc32.jpeg" alt="Product 38">
+                        <h3 class="accessories__item-title">Шлепанцы для Мальчиков</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">699 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Шлепанцы для Мальчиков" data-price="699">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2023-04-09T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc33.jpeg" alt="Product 39">
+                        <h3 class="accessories__item-title">Сандалии для Мальчиков</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">1899 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Сандалии для Мальчиков" data-price="1899">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-10-13T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc34.jpeg" alt="Product 40">
+                        <h3 class="accessories__item-title">Кеды для Мальчиков</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">1299 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Кеды для Мальчиков" data-price="1299">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-02-24T12:03:00Z">
+                        <img class="accessories__item-img product-image img" src="assets/card-img/acc35.jpeg" alt="Product 41">
+                        <h3 class="accessories__item-title">Шлепанцы для Мальчиков</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">799 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Шлепанцы для Мальчиков" data-price="799">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <section class="accessories" id="heals">
+            <div class="container">
+                <h2 class="accessories__title section-title">Красота и здоровье</h2>
+                <div class="accessories__items">
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-01-15T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc37.jpeg" alt="Product 18">
+                        <h3 class="accessories__item-title">Блеск для Губ</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">299 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Блеск для Губ" data-price="299">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2021-11-19T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc38.jpeg" alt="Product 19">
+                        <h3 class="accessories__item-title">Гель для Душа</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">299 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Гель для Душа" data-price="299">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2021-03-25T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc39.jpeg" alt="Product 20">
+                        <h3 class="accessories__item-title">Соль для Ванны "Манго"</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">299 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Соль для Ванны" data-price="299">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-10-28T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc40.jpeg" alt="Product 21">
+                        <h3 class="accessories__item-title">Мыло ручной работы</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">599 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Мыло ручной работы" data-price="599">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2023-03-07T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc41.jpeg" alt="Product 42">
+                        <h3 class="accessories__item-title">Палетка теней для век</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">599 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name=">Палетка теней для век" data-price="599">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-07-27T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc42.jpeg" alt="Product 43">
+                        <h3 class="accessories__item-title">Лак для Ногтей</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">129 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Лак для Ногтей" data-price="129">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-10-05T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc43.jpeg" alt="Product 44">
+                        <h3 class="accessories__item-title">Карандаш для Бровей</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">249 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Карандаш для Бровей" data-price="249">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-02-13T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc44.jpeg" alt="Product 45">
+                        <h3 class="accessories__item-title">Маска для Лица</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">179 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Маска для Лица" data-price="179">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2021-10-07T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc45.jpeg" alt="Product 46">
+                        <h3 class="accessories__item-title">Бомбочка для Ванны</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">249 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Бомбочка для Ванны" data-price="249">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2023-12-28T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc46.jpeg" alt="Product 47">
+                        <h3 class="accessories__item-title">Бальзам для губ</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">249 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Бальзам для губ" data-price="249">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-04-19T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc47.jpeg" alt="Product 48">
+                        <h3 class="accessories__item-title">Гель скраб для душа</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">299 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Гель скраб для душа" data-price="299">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2023-08-02T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc48.jpeg" alt="Product 49">
+                        <h3 class="accessories__item-title">Бомбочка для ванны</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">199 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Бомбочка для ванны" data-price="199">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-05-10T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc49.jpeg" alt="Product 50">
+                        <h3 class="accessories__item-title">Гель для душа</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">399 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Гель для душа" data-price="399">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <section class="accessories" id="sale">
+            <div class="container">
+                <h2 class="accessories__title section-title">Акции</h2>
+                <div class="accessories__items">
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-09-22T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc51.jpeg" alt="Product 23">
+                        <h3 class="accessories__item-title">Рюкзак женский</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">1999 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Рюкзак женский" data-price="1999">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2021-11-05T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc52.jpeg" alt="Product 24">
+                        <h3 class="accessories__item-title">Клатч женский</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">1499 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Клатч женский" data-price="1499">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2023-06-14T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc53.jpeg" alt="Product 25">
+                        <h3 class="accessories__item-title">Рюкзак женский</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">1799 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Рюкзак женский" data-price="1799">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-03-08T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc54.jpeg" alt="Product 26">
+                        <h3 class="accessories__item-title">Рюкзак женский</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">1999 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Рюкзак женский" data-price="1999">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2023-01-11T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc55.jpeg" alt="Product 51">
+                        <h3 class="accessories__item-title">Рюкзак мужской</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">699 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Рюкзак мужской" data-price="699">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-08-06T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc56.jpeg" alt="Product 52">
+                        <h3 class="accessories__item-title">Сумка мужская</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">1799 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Сумка мужская" data-price="1799">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2023-02-03T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc57.jpeg" alt="Product 53">
+                        <h3 class="accessories__item-title">Сумка мужская</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">1699 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Сумка мужская" data-price="1699">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-05-27T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc58.jpeg" alt="Product 54">
+                        <h3 class="accessories__item-title">Кошелек мужской</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">999 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Кошелек мужской" data-price="999">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2021-10-17T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc59.jpeg" alt="Product 55">
+                        <h3 class="accessories__item-title">Рюкзак для Девочек</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">1199 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Рюкзак для Девочек" data-price="1599">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-12-29T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc60.jpeg" alt="Product 56">
+                        <h3 class="accessories__item-title">Сумка для Девочек</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">499 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Сумка для Девочек" data-price="499">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2022-11-20T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc61.jpeg" alt="Product 57">
+                        <h3 class="accessories__item-title">Рюкзак для Девочек</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">1799 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Рюкзак для Девочек" data-price="1799">Купить</button>
+                    </div>
+                    <div class="accessories__item product-card-item product-card" data-date-added="2021-08-12T12:03:00Z">
+                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc62.jpeg" alt="Product 58">
+                        <h3 class="accessories__item-title">Рюкзак для Девочек</h3>
+                        <p class="accessories__item-text date-added" id="date-added"></p>
+                        <span class="accessories__item-price">1699 ₽</span>
+                        <button class="accessories__item-btn buy-btn" data-name="Рюкзак для Девочек" data-price="1699">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="modal" class="modal">
+                <span class="close-btn_modul" id="close-btn-cross">&times;</span>
+                <img class="img_size" id="modal-img" src="" alt="">
+                <h3 id="modal-heading"></h3>
+                <span id="modal-price"></span>
+                <div class="radio-container">
+                    <label><input type="radio" name="color" value="red"> Red</label>
+                    <label><input type="radio" name="color" value="blue"> Blue</label>
+                    <label><input type="radio" name="color" value="green"> Green</label>
+                </div>
+                <input class="number-input" type="number" min="1" name="quantity" placeholder="Введите колличество">
+                <textarea id="comment" name="comment" maxlength="2000" placeholder="Введите комментарий:"></textarea>
+                <button id="close-btn" class="close-btn">Добавить в корзину</button>
+              </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <nav class="footer__menu">
+                
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item">
+                        <p class="footer__menu-title">Категории</p>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#woman" class="footer__menu-link">Женские товары</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#man" class="footer__menu-link">Муржские товары</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#child" class="footer__menu-link">Детские товары</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#heals" class="footer__menu-link">Красота и здоровье</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#sale" class="footer__menu-link">Акции</a>
+                    </li>
+                </ul>
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item">
+                        <h2 class="footer__menu-title">Контакты для связи:</h2>
+                    </li>
+                    <li class="footer__menu-item">
+                        <p class="">Наш магазин находиться: город Москва улица Новый Арбат, дом 12</p>
+                    </li>
+                    <li class="footer__menu-item">
+                        <p class="phone">Телефон для связи:  <a class="phone" href="tel:+79993218732">+79993218732</a></p>
+                    </li>
+                </ul>
+            </nav>
+            <p class="footer__menu-title">Скачать приложение</p>
+            <ul class="app">
+                <li class="app__item">
+                    <a class="app__item-link" href="./page404/index_404.html">
+                        <img class="app__item-img" src="assets/img/appstore.svg" alt="">
+                    </a>
+                </li>
+                <li class="app__item">
+                    <a class="app__item-link" href="./page404/index_404.html">
+                        <img class="app__item-img" src="assets/img/googleplay.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <nav class="copy__nav">
+                <ul class="copy__nav-list">
+                    <li class="copy__nav-item">
+                        <a href="" class="copy__nav-link">Terms of Service</a>
+                    </li>
+                    <li class="copy__nav-item">
+                        <a href="#" class="copy__nav-link">Privacy Policy</a>
+                    </li>
+                    <li class="copy__nav-item">
+                        <a href="#" class="copy__nav-link">Do Not Sell My Personal Information</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer> 
+    <a class="back_to_top" href="#top"></a>
+    <script src="/js/main.js"></script>
+</body>
+</html>
