@@ -156,7 +156,7 @@ body {
  
 .top {
     min-height: calc(100vh - 142px);
-    background-image: url(./assets/img/bg2.jpeg);
+    background-image: url(../assets/img/bg2.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
@@ -642,7 +642,7 @@ textarea{
         font-size: 30px;
     }
     .top {
-        background-image: url(./assets/img/bg2_1.jpg) ;
+        background-image: url(../assets/img/bg2_1.jpg) ;
     }
     .copy__nav-item {
         padding: 0 10px;
