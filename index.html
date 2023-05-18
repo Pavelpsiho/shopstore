@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop for You</title>
+    <title>Shop For You</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -20,13 +20,13 @@
                 </button>
                 <ul class="menu">
                     <li class="menu_items_li"><a class="menu_items" href="#woman">Каталог</a></li>
-                    <li class="menu_items_li"><a class="menu_items" href="#footer">Контакты</a></li>
                     <li class="menu_items_li phone"><a class="menu_items phone" href="tel:+79993218732">+79993218732</a></li>
                     <li class="top_menu-item hidden"><a href="#woman">Женщинам</a></li>
                     <li class="top_menu-item hidden"><a href="#man">Мужчинам</a></li>
                     <li class="top_menu-item hidden"><a href="#child">Детские товары</a></li>
                     <li class="top_menu-item hidden"><a href="#heals">Красота и здоровье</a></li>
                     <li class="top_menu-item hidden"><a href="#sale">Акции</a></li>
+                    <li class="menu_items_li"><a class="menu_items" href="#footer">Контакты</a></li>
                 </ul>
                 <a class="logo" href="#"><img src="./assets/img/logo1_ff.png" width="120" height="60" alt="logo"></a>
                 <button class="light" onclick="toggleTheme()">Темa</button>
@@ -49,7 +49,7 @@
                 <h1 class="title">
                     Обувь найдется для каждого
                 </h1>
-                <button class="top__link" href="#sale">Выбрать</button>
+                <button class="top__link"><a href="#sale">Выбрать</a></button>
             </div>  
         </section>
         <section class="accessories" id="woman">
@@ -306,14 +306,14 @@
                 <h2 class="accessories__title section-title">Красота и здоровье</h2>
                 <div class="accessories__items">
                     <div class="accessories__item product-card-item product-card" data-date-added="2022-01-15T12:03:00Z">
-                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc37.jpeg" alt="Product 18">
+                        <img class="accessories__item-img product-image img img_size img_max-size" src="assets/card-img/acc37.jpeg" alt="Product 18">
                         <h3 class="accessories__item-title">Блеск для Губ</h3>
                         <p class="accessories__item-text date-added" id="date-added"></p>
                         <span class="accessories__item-price">299 ₽</span>
                         <button class="accessories__item-btn buy-btn" data-name="Блеск для Губ" data-price="299">Купить</button>
                     </div>
                     <div class="accessories__item product-card-item product-card" data-date-added="2021-11-19T12:03:00Z">
-                        <img class="accessories__item-img product-image img img_size" src="assets/card-img/acc38.jpeg" alt="Product 19">
+                        <img class="accessories__item-img product-image img img_size img_max-size" src="assets/card-img/acc38.jpeg" alt="Product 19">
                         <h3 class="accessories__item-title">Гель для Душа</h3>
                         <p class="accessories__item-text date-added" id="date-added"></p>
                         <span class="accessories__item-price">299 ₽</span>
@@ -502,7 +502,7 @@
                     <label><input type="radio" name="color" value="blue"> Blue</label>
                     <label><input type="radio" name="color" value="green"> Green</label>
                 </div>
-                <input class="number-input" type="number" min="1" name="quantity" placeholder="Введите колличество">
+                <input class="number-input" type="number" min="1" name="quantity" placeholder="Колл">
                 <textarea id="comment" name="comment" maxlength="2000" placeholder="Введите комментарий:"></textarea>
                 <button id="close-btn" class="close-btn">Добавить в корзину</button>
               </div>
@@ -547,12 +547,12 @@
             <p class="footer__menu-title">Скачать приложение</p>
             <ul class="app">
                 <li class="app__item">
-                    <a class="app__item-link" href="./page404/index_404.html">
+                    <a class="app__item-link" href="./page404/page_404.html">
                         <img class="app__item-img" src="assets/img/appstore.svg" alt="">
                     </a>
                 </li>
                 <li class="app__item">
-                    <a class="app__item-link" href="./page404/index_404.html">
+                    <a class="app__item-link" href="./page404/page_404.html">
                         <img class="app__item-img" src="assets/img/googleplay.svg" alt="">
                     </a>
                 </li>
@@ -560,19 +560,16 @@
             <nav class="copy__nav">
                 <ul class="copy__nav-list">
                     <li class="copy__nav-item">
-                        <a href="" class="copy__nav-link">Terms of Service</a>
+                        <a href="#" class="copy__nav-link">Условия использования</a>
                     </li>
                     <li class="copy__nav-item">
-                        <a href="#" class="copy__nav-link">Privacy Policy</a>
-                    </li>
-                    <li class="copy__nav-item">
-                        <a href="#" class="copy__nav-link">Do Not Sell My Personal Information</a>
+                        <a href="#" class="copy__nav-link">Политика конфиденциальности</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </footer> 
     <a class="back_to_top" href="#top"></a>
-    <script src="./js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>

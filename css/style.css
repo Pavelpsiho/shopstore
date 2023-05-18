@@ -21,7 +21,7 @@ html {
     box-sizing: inherit;
 }
 
-a{
+a {
     color: inherit;
     text-decoration: none;
     cursor: pointer;
@@ -408,6 +408,7 @@ br {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+    padding-top: 30px;
 }
 
 .light {
@@ -428,9 +429,16 @@ br {
     text-align: center;
     display: block;
 }
+
+.modal .img_max-size {
+    height: 100px;
+}
  
 .radio-container {
     text-align: center;
+    padding-top: 10px;
+    display: inline-block;
+    transform: translateX(65%);
     
 }
 
@@ -442,15 +450,20 @@ input {
 textarea{
     vertical-align: text-top;
     padding: 20px;
-    margin-left: 30%;
+    margin-left: 23%;
     margin-top: 10px;
+    resize: none;
+    width: 300px;
+    min-height: 110px;
 }
 
 .number-input {
-    display: block;
+    display: inline-block;
     margin: 10px auto;
     padding: 10px;
-    width: 37%;
+    width: 72px;
+    vertical-align: middle;
+    transform: translateX(224%);
 }
 .close-btn {
     display: block;
@@ -632,6 +645,25 @@ textarea{
     .copy__nav-item {
         padding: 0 20px;
     }
+    .accessories__item-btn {
+        padding: 10px 45px;
+    }
+}
+
+@media (max-width: 540px) {
+    .radio-container {
+        transform: translateX(34%);
+    }
+    .number-input {
+        transform: translateX(100%);
+    }
+    textarea {
+        margin-left: 13%;
+        width: 291px;
+    }
+    .accessories__item-btn {
+        padding: 10px 85px;
+    }
 }
 
 @media (max-width: 473px) {
@@ -655,10 +687,52 @@ textarea{
     }
 }
 
+@media (max-width: 375px) {
+    .app {
+        display: block;
+        padding-left: 80px;
+    }
+    .radio-container {
+        transform: translateX(14%);
+    }
+    .number-input {
+        transform: translateX(118%);
+    }
+    textarea {
+        margin-left: 6%;
+        width: 220px;
+    }
+    .accessories__item-btn {
+        padding: 10px 85px;
+    }
+    .copy__nav-list {
+        gap: 10px;
+    }
+    .modal img {
+        height: 200px;
+    }
+}
+
 @media (max-width: 370px) {
     .app {
         display: block;
         padding-left: 80px;
+    }
+    .radio-container {
+        transform: translateX(14%);
+    }
+    .number-input {
+        transform: translateX(118%);
+    }
+    textarea {
+        margin-left: 6%;
+        width: 220px;
+    }
+    .accessories__item-btn {
+        padding: 10px 85px;
+    }
+    .copy__nav-list {
+        gap: 10px;
     }
 }
 
@@ -670,6 +744,23 @@ textarea{
     .copy__nav-list {
         gap: 10px;
     }
+    .radio-container {
+        transform: translateX(14%);
+    }
+    .number-input {
+        transform: translateX(118%);
+    }
+    textarea {
+        margin-left: 6%;
+        width: 220px;
+    }
+    .accessories__item-btn {
+        padding: 10px 85px;
+    }
+    .copy__nav-list {
+        gap: 10px;
+    }
+    
 }
 
 
@@ -680,5 +771,28 @@ textarea{
     .footer__menu {
         display: block;
         padding-left: 60px;
+    }
+    .radio-container {
+        transform: translateX(7%);
+    }
+    .number-input {
+        transform: translateX(98%);
+    }
+    textarea {
+        margin-left: 0%;
+        width: 220px;
+    }
+    .accessories__item-btn {
+        padding: 10px 85px;
+    }
+    .copy__nav-list {
+        gap: 0px;
+    }
+    
+    #modal {
+        padding: 11px;
+    }
+    .close-btn {
+        padding: 10px 11px;
     }
 }

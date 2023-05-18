@@ -30,8 +30,6 @@ productCards.forEach(card => {
   const dataElement = card.querySelector('.date-added');
   if (dataElement) {
     dataElement.innerHTML = `Дата: ${formattedDate}`;
-  } else {
-    console.error('Element with class "date-added" not found in product card.');
   }
 });
 
@@ -76,6 +74,11 @@ function closeModal() {
 }
 
 closeButton.addEventListener('click', closeModal);
+
+const btnAlert = document.getElementById('close-btn');
+btnAlert.addEventListener('click', () => {
+  alert('Товар добавлен в корзину!');
+});
 
 
 const btn = document.querySelector('.menu-btn');
