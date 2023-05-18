@@ -339,6 +339,10 @@ body {
     justify-content: center;
     gap: 40px;
 }
+.logo_black {
+    transform: translateX(50px);
+    display: none;
+}
 
 .light-theme {
     background-color: #f9f9f9;
@@ -363,6 +367,13 @@ body {
 }
 .dark-theme footer {
     color: #c0c0c0;
+}
+.dark-theme .container {
+    color: #c0c0c0;
+}
+.dark-theme .top__link {
+    color: #c0c0c0;
+    border: 3px solid #c0c0c0;
 }
 br {
     content: "";
@@ -569,6 +580,9 @@ textarea{
         transform: translateY(-100%);
         transition: .3s ease;
         
+    }
+    .nav {
+        border: none;
     }
     .menu-open .menu {
         transform: translateY(0);
